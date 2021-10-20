@@ -1,0 +1,93 @@
+#graphic-image{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: auto;
+    padding: 6px;
+    text-align: center;
+    padding: 2em;
+}
+.photo{
+  display: inline-block;
+}
+
+.photo_small img {
+  height: 315px;
+  width: auto;
+}
+
+.photo_medium img {
+  height:400px;
+  width: auto;
+}
+
+.photo_large img {
+  height: 500px;
+  width: auto;
+}
+
+.photo_banner img {
+  height: 316px;
+  width: auto;
+}
+
+.photo_banner1 img {
+  height: 330px;
+  width: auto;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 100%; /* IE10 */
+  flex: 100%;
+  max-width: 100%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+  .photo_small img {
+    height: 210px;
+    width: auto;
+  }
+  .photo_banner1 img {
+    height: 215px;
+    width: auto;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+  .photo_small img {
+    height: 210px;
+    width: auto;
+  }
+  .photo_banner1 img {
+    height: 215px;
+    width: auto;
+  }
+}
